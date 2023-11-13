@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github.com/AshrafK-17/bazelGo/cmd"
+import "github.com/AshrafK-17/bazelGo_build_deploy/cmd"
 
 func main() {
 	cmd.Execute()

@@ -1,0 +1,15 @@
+digraph mygraph {
+  node [shape=box];
+  "//:bazelGo_build_deploy"
+  "//:bazelGo_build_deploy" -> "//:bazelGo_build_deploy_lib"
+  "//:bazelGo_build_deploy_lib"
+  "//:bazelGo_build_deploy_lib" -> "//:main.go"
+  "//:BUILD.bazel"
+  "//:main.go"
+  "//:gazelle"
+  "//:gazelle" -> "//:gazelle-runner"
+  "//:gazelle-runner"
+  "//:gazelle-update-repos"
+  "//:gazelle-update-repos" -> "//:gazelle-update-repos-runner"
+  "//:gazelle-update-repos-runner"
+}
